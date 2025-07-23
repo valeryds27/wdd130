@@ -2,15 +2,24 @@
     --primary-color: #8f1100;
     --secondary-color: #e6b34f;
     --accent1-color:#000000;
-    --accent2-color: #fefefe;
+    --accent2-color: #fdfdfd;
     --heading-font: 'Michroma', sans-serif;
     --body-font:'Roboto', sans-serif;
 }
 header {
     background-color: var(--accent2-color);
+    display:grid;
+    grid-template-columns:  1fr 2fr;
+    grid-template-rows: 1fr 10px;
 }
+.navigation {
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
 .header img {
-    margin-left: 20px
+    margin-left: 80px
 }
 .header a {
     text-decoration: none;
@@ -36,11 +45,18 @@ header, main, footer {
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    text-align:center;
 }
 
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
+}
+
+footer {
+    display:flex;
+    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 .socialmedia a{
@@ -71,8 +87,8 @@ h1 {
 }
 article {
     position: absolute;
-    bottom: 20px;
-    width: 70%;
+    bottom: 20%;
+    width: auto;
     padding: 1px;
     text-align:justify;
     opacity:0.9;
@@ -87,7 +103,24 @@ article {
     margin-right: 20px;
 }
 
-.imagesadventures img{
-    width: 250px;
-    height: 250px;
+.imagesadventures {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr;
+}
+
+.imagesadventures h2 {
+    grid-column:1/6;
+}
+
+.imagesadventures img {
+    grid-row: 1;
+    grid-column: 1/6;
+    width: 150px;
+    height: 120px;
+    padding:8px;
+}
+
+.imagesadventures figcaption {
+    text-align:center
 }
