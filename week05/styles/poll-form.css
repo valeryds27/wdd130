@@ -1,0 +1,119 @@
+:root{
+    --principal-font:'Ubuntu', sans-serif;
+    --secondary-font:'Google Sans Code', sans-serif;
+    --primary-color:#6e7776;
+    --secondary-color: #264653;
+    --border-radius: 0.5rem;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--principal-font);
+    font-size:1rem;
+}
+header{
+    margin: 0 auto;
+    width: 650px;
+}
+h1{
+    font-family: var(--principal-font);
+    color: var(--primary-color);
+    text-align: center;
+    text-shadow: var(--secondary-color) 1px 1px;
+}
+
+
+form{
+    display: grid;
+    width:650px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border: var(--secondary-color) 1px solid;
+    border-radius: var(--border-radius);
+   
+}
+
+fieldset{
+    display:grid;
+    grid-gap: .5rem;
+    background-color: #d3d3d3;
+    border-radius: var(--border-radius);
+    margin:1rem;
+    padding:1rem;
+}
+
+legend{
+    font-weight: bold;
+    margin-left:2rem;
+    padding:0.5rem;
+    border-radius: var(--border-radius);
+    color:white;
+    text-shadow: var(--secondary-color) 2px 2px;
+    background-color:var(--primary-color);
+}
+
+label, input, select, button, textarea {
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    font-size: small;
+}
+
+label{
+    text-align:right;
+    padding-right: 1rem;
+}
+
+.feedback {
+    text-align: center;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 10px;
+}
+
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+}
+
+button{
+    background-color: var(--primary-color);
+    color:white;
+    font-weight: bold;
+    height: 2rem;
+    width: 10rem;
+    font-size:large;
+    text-shadow: #264653 2px 2px;
+    margin: auto;
+    border-radius: var(--border-radius);
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+footer {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: medium;
+    width:100%;
+}
+
+.form-item {
+    display:grid;
+    align-items:center;
+}
+
+.column1{
+    grid-template-columns: 3fr 1fr;
+}
+
+.column2{
+    grid-template-columns: 1fr 2fr;
+}
