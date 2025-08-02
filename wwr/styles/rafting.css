@@ -147,8 +147,10 @@ article {
     height: auto;
 }
 
-.company-information h2 {
+.company-information h1 {
+    position:inherit;
     color: var(--accent2-color);
+    opacity:1;
     font-family: var(--heading-font);
     font-size: 25px;
     font-weight: bold;
@@ -178,7 +180,7 @@ article {
 }
 
 .form img{
-    position: block;
+    display: block;
     width: 100%;
     height: auto;
 }
