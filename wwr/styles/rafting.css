@@ -55,10 +55,7 @@ h2 {
     text-align: center;
 }
 
-nav,
-p,
-section,
-article {
+nav, p, section, article {
     margin: 16px;
     padding: 8px;
 }
